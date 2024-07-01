@@ -1,0 +1,15 @@
+{
+  "backbone" : {"model_name": "resnet50"},
+
+  "encoder" : {"dim": 256,
+              "repeat": 6,
+              "feat_levels": [0, 1, 2],
+              "z_candi": [-3.0, -1.0, 1.0, 3.0]},
+
+  "decoder" : {"dim": 256,
+               "blocks": [256],
+               "residual": true,
+               "factor": 2},
+
+  "dim_last": 256
+}

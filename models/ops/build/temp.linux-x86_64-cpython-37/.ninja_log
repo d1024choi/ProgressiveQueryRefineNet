@@ -1,0 +1,4 @@
+# ninja log v5
+0	3751	1683092981225239714	/home/dooseop/Pytorch/ObjDet/Deformable-DETR/models/ops/build/temp.linux-x86_64-cpython-37/home/dooseop/Pytorch/ObjDet/Deformable-DETR/models/ops/src/cpu/ms_deform_attn_cpu.o	7e54143cc8cb7fc0
+0	12288	1683092989765239619	/home/dooseop/Pytorch/ObjDet/Deformable-DETR/models/ops/build/temp.linux-x86_64-cpython-37/home/dooseop/Pytorch/ObjDet/Deformable-DETR/models/ops/src/cuda/ms_deform_attn_cuda.o	d3100b5cae5075ca
+1	13135	1683092990593239610	/home/dooseop/Pytorch/ObjDet/Deformable-DETR/models/ops/build/temp.linux-x86_64-cpython-37/home/dooseop/Pytorch/ObjDet/Deformable-DETR/models/ops/src/vision.o	dacff095b81a200f

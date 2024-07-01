@@ -1,0 +1,4 @@
+# ninja log v5
+0	4608	1683526328482086232	/home/dooseop/Pytorch/TopViewSeg/TopViewSemanticSeg_v1p5_test/models/ops/build/temp.linux-x86_64-cpython-38/home/dooseop/Pytorch/TopViewSeg/TopViewSemanticSeg_v1p5_test/models/ops/src/cpu/ms_deform_attn_cpu.o	145ee52953fbe2fa
+0	12651	1683526336538085947	/home/dooseop/Pytorch/TopViewSeg/TopViewSemanticSeg_v1p5_test/models/ops/build/temp.linux-x86_64-cpython-38/home/dooseop/Pytorch/TopViewSeg/TopViewSemanticSeg_v1p5_test/models/ops/src/cuda/ms_deform_attn_cuda.o	7fcc2e5542f87c5a
+0	14106	1683526337978085896	/home/dooseop/Pytorch/TopViewSeg/TopViewSemanticSeg_v1p5_test/models/ops/build/temp.linux-x86_64-cpython-38/home/dooseop/Pytorch/TopViewSeg/TopViewSemanticSeg_v1p5_test/models/ops/src/vision.o	de703369060c271b
