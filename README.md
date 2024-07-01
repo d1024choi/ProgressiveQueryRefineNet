@@ -10,8 +10,12 @@
 + **Config Setting** : edit ./config/config.json such that "dataset_dir" correctly locates the directory where your nuScenes dataset is stored.
 
 
-+ **Implemenation Environment** : The model is implemented by using Pytorch. We share our anaconda environment in the folder 'anaconda_env'.
-
++ **Implemenation Environment** : The model is implemented by using Pytorch. We share our anaconda environment in the folder 'anaconda_env'. We trained our model on a server equipped with 4 NVIDIA GeForce RTX 4090 graphic cards. To run the deformable attention of BEVFormer, you need to install CUDA first (version 11.1 is installed in our server) and then compile dedicated CUDA operators in ./models/ops.
+```sh
+$ cd ./models/ops
+$ sh ./make.sh
+$ python test.py # unit test (should see all checking is True)
+```
 
 ## Train and Test New Models
 To train the model from scratch, run the followings. The network parameters of the trained models will be stored in the folder ***saved_models***.
