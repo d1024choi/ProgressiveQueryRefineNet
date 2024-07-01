@@ -26,7 +26,7 @@ $ sh run_train.sh
 **argumentparser.py** have a number of command-line flags that you can use to configure the model architecture, hyperparameters, and input / output settings. You can find the descriptions in the file.
 
 
-To test the trained model, first edit the parameter 'exp_id' in 'run_test.sh' file to match your experiment id and run the followings.
+To test the trained model, first edit the parameter 'exp_id' in 'run_test.sh' file to match your experiment id and run the followings. You also need to set 'target' in the file to one of four categories (vehicle, pedestrian, road, lane)
 ```sh
 $ sh run_test.sh
 ```
