@@ -32,7 +32,7 @@ $ sh run_test.sh
 ```
 
 ## Test Pre-trained Models
-To test the pre-trained models, first download the pre-trained model parameters from https://drive.google.com/file/d/1kEI3jLueqVejvim_Moh4909yBFQG4jaF/view?usp=sharing. Next, copy them into 'saved_models' folder. Finally, edit the parameter 'exp_id' in 'run_test.sh' file to match the downloaded experiment id and run the followings.
+To test the pre-trained models, first download the pre-trained model parameters from web_address. Next, copy them into 'saved_models' folder. Finally, edit the parameter 'exp_id' in 'run_test.sh' file to match the downloaded experiment id and run the followings. It is worth nothing that we trained our models four times each of which corresponds to one of the four classes.
 ```sh
 $ python run_test.sh
 ```
