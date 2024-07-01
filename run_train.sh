@@ -1,4 +1,5 @@
-GPU_NUM=4
+GPU_NUM=0
+HOST_NODE_ADDR=10000
 W_VEH=1.0
 W_PED=0.0
 W_ROAD=1e-2
@@ -19,13 +20,13 @@ USE_VIS_OFFSET=0
 FEAT_INTERACTION=2
 FEAT_INT_REPEAT=5
 
-for i in 533 534
+for i in 1004
 do
-CUDA_VISIBLE_DEVICES=4,5,6,7 torchrun --standalone --nnodes=1 --nproc_per_node=4 train.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nnodes=1 --nproc_per_node=4 --max_restarts=3 --rdzv_id=$GPU_NUM --rdzv_backend=c10d --rdzv_endpoint=localhost:$HOST_NODE_ADDR train.py \
 --dataset_type 'nuscenes' \
 --exp_id $i \
 --gpu_num $GPU_NUM \
---num_cores 4 \
+--num_cores 16 \
 --num_epochs $NUM_EPOCH \
 --batch_size $BS \
 --w_vehicle $W_VEH \
@@ -48,13 +49,5 @@ CUDA_VISIBLE_DEVICES=4,5,6,7 torchrun --standalone --nnodes=1 --nproc_per_node=4
 --bool_apply_crosshead 0 \
 --img_aug_prob 0.0 \
 --max_translation 0
-
-python test_all.py \
---dataset_type 'nuscenes' \
---model_name 'Scratch' \
---target 'vehicle' \
---exp_id $i \
---gpu_num $GPU_NUM \
---visualization 0
 done
 
