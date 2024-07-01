@@ -10,7 +10,7 @@
 + **Config Setting** : edit ./config/config.json such that "dataset_dir" correctly locates the directory where your nuScenes dataset is stored. In addition, add your targets (e.g., 'vehicle', 'road', 'lane', 'pedestrian') into "target" in ./config/Scratch/data.json. For example, if you set "target":["vehicle", "pedestrian"], the model will automatically be configured and trained to predict both 'vehicle' and 'pedestrian'.
 
 
-+ **Implemenation Environment** : The model is implemented by using Pytorch. We share our anaconda environment in the folder 'anaconda_env'. We trained our model on a server equipped with 4 NVIDIA GeForce RTX 4090 graphic cards. To run the deformable attention of BEVFormer, you need to install CUDA first (the version 11.1 is installed in our server) and then compile dedicated CUDA operators in ./models/ops.
++ **Implemenation Environment** : The model is implemented by using Pytorch. We share our anaconda environment in the folder 'anaconda_env'. We trained our model on a server equipped with 4 NVIDIA GeForce RTX 4090 graphic cards. To run the deformable attention of BEVFormer, you need to install CUDA first (the version 11.1 is installed in our server) and then compile dedicated CUDA operators in ./models/ops as follows.
 ```sh
 $ cd ./models/ops
 $ sh ./make.sh
