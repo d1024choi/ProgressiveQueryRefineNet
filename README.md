@@ -7,10 +7,7 @@
 
 ## Setup
 
-+ **config setting** : edit ./config/config.json such that "dataset_dir" correctly locates the directory where your nuScenes dataset is stored.
- 
-+ **Dataset** : Create folders 'preprocessed_dataset/2sec_6sec' and 'preprocessed_dataset/2sec_3sec' in 
-'NuscenesDataset' and 'ArgoverseDataset' folders, respectively. Next, download the preprocessed dataset files from https://drive.google.com/file/d/1iMfv3NdfUaqYvwX1pgFDWUq6UDdMBAAM/view?usp=sharing and copy them into the created folders, respectively. If you want to build new preprocessed dataset files from nuScenes and Argoverse Forecast datasets, download raw data from the corresponding websites and edit the parameter 'dataset_path' in 'config/config.json' file. Here, 'dataset_path' must point to the directory where the downloaded raw data exists. 
++ **Config Setting** : edit ./config/config.json such that "dataset_dir" correctly locates the directory where your nuScenes dataset is stored.
 
 
 + **Implemenation Environment** : The model is implemented by using Pytorch. We share our anaconda environment in the folder 'anaconda_env'.
