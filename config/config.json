@@ -1,0 +1,9 @@
+{
+
+  "model_name" : "Scratch",
+
+  "nuscenes" : {
+    "dataset_dir": "/home/dooseop/DATASET/nuscenes/",
+    "version": "v1.0-trainval"
+  }
+}

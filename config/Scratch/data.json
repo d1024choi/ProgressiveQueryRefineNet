@@ -1,0 +1,34 @@
+{
+  "target": ["vehicle"],
+
+  "original_image" : {"h":900, "w":1600},
+
+  "bev" : {"h": 200,
+           "w": 200,
+           "z": 0,
+           "h_meters": 100,
+           "w_meters": 100,
+           "z_meters": 20,
+           "offset": 0,
+	       "scale": 1},
+
+  "lift" : {"x_bound": [-50.0, 50.0, 0.5],
+            "y_bound": [-50.0, 50.0, 0.5],
+            "z_bound": [-10.0, 10.0, 20.0],
+            "d_bound": [2.0, 50.0, 1.0]},
+
+  "image" : {"top_crop": 46,
+             "h": 224,
+             "w": 480,
+             "n_cam": 6},
+
+  "num_class": 12,
+
+  "label_indices": {"vehicle": [[4, 5, 6, 7, 8, 10, 11]],
+                    "lane":  [[2, 3]],
+                    "road":  [[0, 1]],
+                    "pedestrian":  [[9]]},
+
+  "target_frame_indices": [0]
+
+}
