@@ -3,7 +3,7 @@
 
 ## Note
 
-+ ...
++ Thanks for you attention and interest!
 
 ## Setup
 
