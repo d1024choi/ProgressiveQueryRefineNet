@@ -49,3 +49,7 @@ $ python run_test.sh
  year = {2024}
 }
 ```
+
+## Acknowledgement
+We would like to thank the authors of [CVT](https://github.com/bradyz/cross_view_transformers), [BEVFormer](https://github.com/fundamentalvision/BEVFormer), [FIERY](https://github.com/wayveai/fiery), [LSS](https://github.com/nv-tlabs/lift-splat-shoot) for their sharing the original implementation codes. Our work is highly inspired and motivated by not only the mentioned works but also other predecessors.
+
