@@ -38,7 +38,7 @@ $ python run_test.sh
 ```
 
 ## Paper Download
-...
+[Arxiv](https://arxiv.org/abs/2407.17003)
 
 ## Citation
 ```
